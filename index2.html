@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>とよシローなにシロークイズ2ex</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol&family=Yusei+Magic&display=swap');
+    body {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #63f1c6, #48c8ec);
+    font-family: "Hiragino Sans", "Yu Gothic", sans-serif;
+    
+  }
+   .mondaiwaku {
+    margin: 1em 0;
+    background: #fff9dc;
+    text-align: center;
+    color: #FF00FF
+}
+.mondaiwaku .box-title {
+    font-size: 0.8em;
+    background: #ff3300ce;
+    padding: 4px;
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+.mondaiwaku p {
+    text-align: center;
+    padding: 15px 20px;
+    margin: 0;
+}
+
+.answaku{
+    padding: 8px 19px;
+    margin: 2em 0;
+    color: #2c2c2f;
+    background: #cde4ff;
+    border-top: solid 5px #5989cf;
+    border-bottom: solid 5px #5989cf;
+    font-size: 10px;
+}
+.answaku p {
+    margin: 0; 
+    padding: 0;
+}
+
+.ans{
+    padding: 0.5em 1em;
+    margin: 4em 0;
+    background: #f4f4f4;
+    border-left: solid 6px #b7665b;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.33);
+}
+.ans p {
+    margin: 0; 
+    padding: 0;
+}
+
+
+.toiwaku {
+    margin: 1em 0;
+    background: #fff9dc;
+    text-align: center;
+    color: #ffa600
+}
+.toiwaku .box-toiwaku {
+    font-size: 0.8em;
+    background: #ff3300ce;
+    padding: 4px;
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+.toiwaku p {
+    text-align: center;
+    padding: 15px 20px;
+    margin: 0;
+}
+.kai {
+  display: block;
+  margin: 20px auto;
+  
+}
+
+.input-box:focus {
+  border-bottom-color: #ff6f61;
+}
+
+.kai {
+  width: 70%;
+  padding: 20px;
+  font-size: 30px;
+  border-radius: 20px;
+  border-width: 10px;
+  align-items: center;
+  border-color: blanchedalmond;
+  outline: none;
+}
+
+.kai:focus {
+  background-color: #ffffff;
+  box-shadow: 0 0 0 2px #ffb74d;
+}
+ #checktoi11 {
+    padding: 20px 50px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    background-color: #4f46e5;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 6px 0 #3730a3;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+    display: block;
+    margin: 40px auto;
+  }
+  
+
+  #checktoi11:active {
+    transform: translateY(6px);
+    box-shadow: 0 0 0 #3730a3;
+  }
+
+  #checktoi11:hover {
+    background-color: #4338ca;
+  }
+
+
+</style>
+</head>
+  <body> 
+    <div class="toi">
+        <div class="toiwaku">
+    <div class="box-toiwaku"><h1>第11問</h1></div>
+    <p><h1>これはなにシロー？</h1></p>
+</div>
+ <p style="text-align:center"><img src="kamo.jpg"  width="100%" height="100%"></p>
+    &nbsp;
+     <div class="mondai">
+        &nbsp;
+<h1>回答を入力</h1>
+<input type="text" class="kai" id="toyo11">
+<button id="checktoi11">第12問へ</button>
+</div>
+
+<span id="score" style="display: none;"></span>
+<script src="script.js"></script>    
+    </body>

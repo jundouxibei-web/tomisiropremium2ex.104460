@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>とよシローなにシロークイズ2ex</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol&family=Yusei+Magic&display=swap');
+
+body {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #f17463, #ecb548);
+    font-family: "Hiragino Sans", "Yu Gothic", sans-serif;
+    
+  }
+
+.title {
+  font-family: "Kaisei Decol", serif;
+  font-weight: 600;
+  font-size: 25px;
+  font-style: normal;
+  color: #1420c7c7;
+  text-align : center;
+}
+
+.setu {
+  font-weight: 600;
+  font-size: 15px;
+  font-style: normal;
+  color: #000000;
+}
+
+.setu2 {
+  font-weight: 600;
+  font-size: 20px;
+  font-style: normal;
+  color: #ea7b0dde;
+}
+
+.setu3 {
+  font-weight: 600;
+  font-size: 15px;
+  font-style: normal;
+}
+
+.box1 {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    border: solid 3px #000000;
+}
+.box1 p {
+    margin: 0; 
+    padding: 0;
+}
+
+
+.rei{
+    margin:2em 0;
+    position: relative;
+    padding: 0.25em 1em;
+    border: solid 2px #2b67e7;
+    border-radius: 3px 0 3px 0;
+}
+.rei:before,.rei:after
+{
+    content: '';
+    position: absolute;
+    width:10px;
+    height: 10px;
+    border: solid 2px #2b67e7;
+    border-radius: 50%;
+}
+.rei:after {
+    top:-12px;
+    left:-12px;
+}
+.rei:before {
+    bottom:-12px;
+    right:-12px;
+}
+.rei p {
+    margin: 0; 
+    padding: 0;
+}
+
+ .mondaiwaku {
+    margin: 1em 0;
+    background: #fff9dc;
+    text-align: center;
+    color: #FF00FF
+}
+.mondaiwaku .box-title {
+    font-size: 0.8em;
+    background: #ff3300ce;
+    padding: 4px;
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+.mondaiwaku p {
+    text-align: center;
+    padding: 15px 20px;
+    margin: 0;
+}
+
+.answaku{
+    padding: 8px 19px;
+    margin: 2em 0;
+    color: #2c2c2f;
+    background: #cde4ff;
+    border-top: solid 5px #5989cf;
+    border-bottom: solid 5px #5989cf;
+    font-size: 10px;
+}
+.answaku p {
+    margin: 0; 
+    padding: 0;
+}
+
+.ans{
+    padding: 0.5em 1em;
+    margin: 4em 0;
+    background: #f4f4f4;
+    border-left: solid 6px #b7665b;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.33);
+}
+.ans p {
+    margin: 0; 
+    padding: 0;
+}
+
+  #totoi11 {
+    padding: 20px 50px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    background-color: #4f46e5;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 6px 0 #3730a3;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+    display: block;
+    margin: 40px auto;
+  }
+  
+
+  #totoi11:active {
+    transform: translateY(6px);
+    box-shadow: 0 0 0 #3730a3;
+  }
+
+  #totoi11:hover {
+    background-color: #4338ca;
+  }
+
+
+</style>
+
+
+
+  </head>
+  <body> 
+    <div class="setumei">
+<p class="title">とよシローなにシロークイズ２ex</p><br>
+<p class="setu">このクイズは様々な格好をしたとよシローが〇〇シローかを考えるクイズだよ！</p><br>
+&nbsp;
+     <div class="rei">
+      <h2><font color="blue">＜ルール説明＞</font></h2>
+     <ul>
+      <li>回答は”とよシロー”みたいに<font color="red">シローはカタカナ、それ以外はひらがな</font>にしてね!</li>
+      <li>今回は△なしの〇か✕かで点数をつけるからクレームはやめてね!</li>
+      <li>ex問題はヒントと答え合わせなしで行うよ！</li>
+    </ul>
+  </div>
+  &nbsp;
+  <div class="mondaiwaku">
+    <div class="box-title"><h1>例題</h1></div>
+    <p><h1>これはなにシロー？</h1></p>
+</div>
+    <p style="text-align:center"><img src="meka.jpg" width="100%" height="100%"></p>
+    <div class="answaku">
+    <h1>回答　ろぼっとよシロー</h1>
+</div>
+<div class="ans">
+           <p>覚えてたかな！？ロボットの見た目をしているからろぼっとよシローだよね！
+            こんな感じの問題を３問用意したからやってみよう！</p>
+       </div>
+       <button id="totoi11">第11問へ</button>
+       </div>
+       
+       
+<span id="score" style="display: none;"></span>
+<script src="script.js"></script>    
+    </body>
