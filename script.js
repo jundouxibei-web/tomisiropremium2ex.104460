@@ -71,6 +71,14 @@ function check11() {
   document.querySelector('.kaito').style.display = 'block';
 
 if (score2ex >=1){
+    if(score2ex<34){
+     document.getElementById("zeromon").textContent = "残念！今回は一問も正解していないみたい！EXは答え合わせをしないからリンクを保存して何度でも挑戦してみよう！";
+    }
+}
+
+
+
+if (score2ex >1){
     if(score2ex<=34){
      document.getElementById("itimon").textContent = "今回君が正解したのは一問だ。EXは答え合わせをしないからリンクを保存して何度でも挑戦してみよう！";
     }
