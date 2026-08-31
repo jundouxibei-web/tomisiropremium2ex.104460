@@ -104,7 +104,7 @@ const share_title = `とよシローなにシロークイズ２EX${score2ex}点�
   const share_twitter = document.getElementById("js-share-twitter");
   share_twitter.setAttribute(
       "href",
-      "https://twitter.com/share?url=" + "https://jundouxibei-web.github.io/tomisiropremium.-.104460/" + "&text=" + share_title + "&hashtags=とよシローなにシロークイズ"
+      "https://twitter.com/share?url=" + "" + "&text=" + share_title + "&hashtags=とよシローなにシロークイズ2ex"
   );
 
 
